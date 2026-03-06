@@ -1,5 +1,10 @@
-print("hello world")
+from PyQt6.QtWidgets import QApplication
+import sys
+from views.mainView import MainWindow
 
 
 if __name__ == "__main__":
-    print("Bobs your uncle")
+    app = QApplication(sys.argv)
+    mainWindow = MainWindow()
+    mainWindow.show()
+    app.exec()
